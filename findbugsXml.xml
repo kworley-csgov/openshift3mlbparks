@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1452030018678" analysisTimestamp="1452030017892" release="">
+  <Project projectName="mlbparks">
+    <Jar>C:\Eclipse\mlbparks\bin</Jar>
+    <AuxClasspathEntry>C:\Eclipse\mlbparks\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_66\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Eclipse\mlbparks\src\main\java</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="org.openshift.mlbparks.domain.MLBPark">
+      <SourceLine classname="org.openshift.mlbparks.domain.MLBPark" sourcefile="MLBPark.java" sourcepath="org/openshift/mlbparks/domain/MLBPark.java"/>
+    </Class>
+    <Field classname="org.openshift.mlbparks.domain.MLBPark" name="position" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.openshift.mlbparks.domain.MLBPark" sourcefile="MLBPark.java" sourcepath="org/openshift/mlbparks/domain/MLBPark.java"/>
+    </Field>
+    <SourceLine classname="org.openshift.mlbparks.domain.MLBPark" start="24" end="24" startBytecode="2" endBytecode="2" sourcefile="MLBPark.java" sourcepath="org/openshift/mlbparks/domain/MLBPark.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="org.openshift.mlbparks.mongo.DBConnection">
+      <SourceLine classname="org.openshift.mlbparks.mongo.DBConnection" sourcefile="DBConnection.java" sourcepath="org/openshift/mlbparks/mongo/DBConnection.java"/>
+    </Class>
+    <Field classname="org.openshift.mlbparks.mongo.DBConnection" name="mongoDB" signature="LDB;" isStatic="false">
+      <SourceLine classname="org.openshift.mlbparks.mongo.DBConnection" start="22" end="22" startBytecode="0" endBytecode="0" sourcefile="DBConnection.java" sourcepath="org/openshift/mlbparks/mongo/DBConnection.java"/>
+    </Field>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 5 Jan 2016 16:40:12 -0500" total_classes="4" referenced_classes="15" total_bugs="2" total_size="64" num_packages="3" java_version="1.8.0_66" vm_version="25.66-b18" cpu_seconds="12.78" clock_seconds="42.68" peak_mbytes="606.16" alloc_mbytes="910.50" gc_seconds="0.84" priority_2="2">
+    <PackageStats package="org.openshift.mlbparks.domain" total_bugs="1" total_types="1" total_size="39" priority_2="1">
+      <ClassStats class="org.openshift.mlbparks.domain.MLBPark" sourceFile="MLBPark.java" interface="false" size="39" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="org.openshift.mlbparks.mongo" total_bugs="1" total_types="1" total_size="10" priority_2="1">
+      <ClassStats class="org.openshift.mlbparks.mongo.DBConnection" sourceFile="DBConnection.java" interface="false" size="10" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="org.openshift.mlbparks.rest" total_bugs="0" total_types="2" total_size="15">
+      <ClassStats class="org.openshift.mlbparks.rest.JaxrsConfig" sourceFile="JaxrsConfig.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="org.openshift.mlbparks.rest.MLBParkResource" sourceFile="MLBParkResource.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="300" invocations="317" avgMicrosecondsPerInvocation="946" maxMicrosecondsPerInvocation="4880" standardDeviationMircosecondsPerInvocation="415"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="200" invocations="2" avgMicrosecondsPerInvocation="100369" maxMicrosecondsPerInvocation="173301" standardDeviationMircosecondsPerInvocation="72932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="114" invocations="316" avgMicrosecondsPerInvocation="362" maxMicrosecondsPerInvocation="7578" standardDeviationMircosecondsPerInvocation="676"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1452030018678" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
