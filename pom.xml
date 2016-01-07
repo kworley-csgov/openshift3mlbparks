@@ -92,7 +92,7 @@
   						 		<phase>compile</phase>
   						 		<goals>
   						 			<goal>check</goal>
-  						 		<goals>
+  						 		</goals>
   						 		<configuration>
   						 		<effort>Max</effort>
       							<findbugsXmlOutput>true</findbugsXmlOutput>
