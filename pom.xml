@@ -88,16 +88,17 @@
   						 <version>1.2</version>
   						 <executions>
   						 	<execution>
-  						 		<id>failing-on-high</id>
-  						 		<phase>process-test-resources</phase>
+  						 		<id>analyze-compile</id>
+  						 		<phase>compile</phase>
   						 		<goals>
   						 			<goal>check</goal>
   						 		<goals>
   						 		<configuration>
+  						 		<effort>Max</effort>
       							<findbugsXmlOutput>true</findbugsXmlOutput>
      						 	<findbugsXmlWithMessages>true</findbugsXmlWithMessages>
      						 	<xmlOutput>true</xmlOutput>
-     						 	<threshold>High</threshold>
+     						 	<threshold>Low</threshold>
       							[...]
   						 		</configuration>
   							</execution>
