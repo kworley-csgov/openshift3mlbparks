@@ -86,12 +86,22 @@
    						<groupId>org.codehaus.mojo</groupId>
   						 <artifactId>findbugs-maven-plugin</artifactId>
   						 <version>1.2</version>
-  						 <configuration>
-      						<findbugsXmlOutput>true</findbugsXmlOutput>
-     						 <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
-     						 <xmlOutput>true</xmlOutput>
-      						[...]
-  						 </configuration>
+  						 <executions>
+  						 	<execution>
+  						 		<id>failing-on-high</id>
+  						 		<phase>process-test-resources</phase>
+  						 		<goals>
+  						 			<goal>check</goal>
+  						 		<goals>
+  						 		<configuration>
+      							<findbugsXmlOutput>true</findbugsXmlOutput>
+     						 	<findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+     						 	<xmlOutput>true</xmlOutput>
+     						 	<threshold>High</threshold>
+      							[...]
+  						 		</configuration>
+  							</execution>
+  						</executions>
 					</plugin>
 				</plugins>
 			</build>
